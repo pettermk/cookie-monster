@@ -8,4 +8,5 @@ class Cookie(models.Model):
     cookie = models.TextField()
 
     class Meta:
-        ordering = ['time_sent']
+        ordering = ['-time_sent']
+    
