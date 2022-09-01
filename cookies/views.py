@@ -23,7 +23,7 @@ class CookiesView(APIView):
 
     
     def get(self, request, format=None):
-        cookies = Cookie.objects.all().order_by('time_sent')
+        cookies = Cookie.objects.all().order_by('-time_sent')
         serializer = CookieSerializer(cookies, many=True)
         return Response(serializer.data)
 
