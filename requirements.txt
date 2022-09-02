@@ -2,3 +2,5 @@ django
 django-rest-framework
 django-cors-headers
 mysqlclient
+gunicorn
+whitenoise
