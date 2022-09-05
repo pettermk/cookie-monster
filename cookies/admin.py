@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from cookies.models import Cookie
+
+class CookieAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Cookie)
